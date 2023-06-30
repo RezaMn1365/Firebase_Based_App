@@ -1,9 +1,13 @@
+import 'package:cosmic/repository/authentication_repository.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class HomeController extends GetxController {
-  //TODO: Implement HomeController
+  TextEditingController emailController = TextEditingController();
+  TextEditingController passController = TextEditingController();
+  TextEditingController phoneController = TextEditingController();
 
-  final count = 0.obs;
   @override
   void onInit() {
     super.onInit();
@@ -19,5 +23,11 @@ class HomeController extends GetxController {
     super.onClose();
   }
 
-  void increment() => count.value++;
+  Future<void> creatNewUser() async {
+    await AuthenticationRepository.instance.creatUserWithEmailAndPassword(emailController.text, passController.text);
+  }
+
+  Future<void> signIn() async {
+    await AuthenticationRepository.instance.signInWithEmailAndPassword(emailController.text, passController.text);
+  }
 }

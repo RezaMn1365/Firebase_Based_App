@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "182199909811",
+    "project_id": "fir-basedapp-f63e4",
+    "storage_bucket": "fir-basedapp-f63e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182199909811:android:1e0df36dd99a5fd6e8dfc6",
+        "android_client_info": {
+          "package_name": "com.example.cosmic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "182199909811-l52olfv8vrsns9d02fcatukq9bmgos6d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCm6BbAIqf3G9aIradzcik48l6iKxUGKEU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "182199909811-l52olfv8vrsns9d02fcatukq9bmgos6d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
